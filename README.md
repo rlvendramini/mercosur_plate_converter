@@ -1,22 +1,22 @@
 # MercosurPlateConverter
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/mercosur_plate_converter`. To experiment with that code, run `bin/console` for an interactive prompt.
+[ENGLISH 🇺🇸🇬🇧](README_en.md)
 
-TODO: Delete this and the text above, and describe your gem
+A motivação por trás dessa GEM é validar e converter placas de veículos brasileiros do antigo modelo para o novo modelo adotado pelo Mercosul (e vice-versa).
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Insira a linha abaixo em seu Gemfile:
 
 ```ruby
 gem 'mercosur_plate_converter'
 ```
 
-And then execute:
+E então execute no terminal:
 
     $ bundle install
 
-Or install it yourself as:
+Ou instale manualmente, também via terminal:
 
     $ gem install mercosur_plate_converter
 
@@ -26,10 +26,10 @@ TODO: Write usage instructions here
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+Após verificar o repositório, execute `bin/setup` para instalar as dependências. Em seguida, execute `rake spec` para executar os testes. Você também pode executar `bin/console` para um prompt interativo que permitirá que você experimente.
 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/mercosur_plate_converter.
+Relatórios de bugs e pull requests são bem-vindos no GitHub em https://github.com/[USERNAME]/mercosur_plate_converter.
