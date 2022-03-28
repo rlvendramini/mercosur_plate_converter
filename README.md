@@ -22,7 +22,20 @@ Ou instale manualmente, também via terminal:
 
 ## Usage
 
-TODO: Write usage instructions here
+Crie uma instância da classe MercosurPlateConverter e use os métodos para validar e converter placas.
+
+O exemplo abaixo considera que você fornece uma placa válida do tipo Mercosul:
+
+```ruby
+plate = MercosurPlateConverter::Converter.from_string("ABC1C34")
+
+plate.original_plate #=> "ABC1334"
+plate.plate #=> "ABC1234"
+plate.type #=> :mercosur
+plate.valid? #=> true
+plate.mercosur? #=> true
+plate.old_brazilian? #=> false
+```
 
 ## Development
 

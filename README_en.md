@@ -22,7 +22,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Instantiate MercosurPlateConverter class and use the methods to validate and convert plates.
+
+The example below assumes that you supply a valid Mercosur-type license plate:
+
+```ruby
+plate = MercosurPlateConverter::Converter.from_string("ABC1C34")
+
+plate.original_plate #=> "ABC1334"
+plate.plate #=> "ABC1234"
+plate.type #=> :mercosur
+plate.valid? #=> true
+plate.mercosur? #=> true
+plate.old_brazilian? #=> false
+```
 
 ## Development
 
