@@ -1,4 +1,6 @@
 [![Gem Version](https://badge.fury.io/rb/mercosur_plate_converter.svg)](https://badge.fury.io/rb/mercosur_plate_converter)
+[![Ruby](https://github.com/rlvendramini/mercosur_plate_converter/actions/workflows/ruby.yml/badge.svg)](https://github.com/rlvendramini/mercosur_plate_converter/actions/workflows/ruby.yml)
+[![CodeQL](https://github.com/rlvendramini/mercosur_plate_converter/actions/workflows/codeql.yml/badge.svg)](https://github.com/rlvendramini/mercosur_plate_converter/actions/workflows/codeql.yml)
 
 # MercosurPlateConverter
 
