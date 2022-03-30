@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/mercosur_plate_converter.svg)](https://badge.fury.io/rb/mercosur_plate_converter)
+
 # MercosurPlateConverter
 
 [PORTUGUESE 🇧🇷](README.md)
