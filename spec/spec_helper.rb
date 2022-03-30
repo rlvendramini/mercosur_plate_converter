@@ -1,5 +1,9 @@
 # frozen_string_literal: true
 
+require "simplecov"
+
+SimpleCov.start
+
 require "mercosur_plate_converter"
 
 RSpec.configure do |config|
