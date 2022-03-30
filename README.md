@@ -67,4 +67,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Como contribuir?
 
-Relatórios de bugs e pull requests são bem-vindos no GitHub em https://github.com/[USERNAME]/mercosur_plate_converter.
+Relatórios de bugs e pull requests são bem-vindos no GitHub em [github.com/rlvendramini/mercosur_plate_converter](https://github.com/rlvendramini/mercosur_plate_converter).
