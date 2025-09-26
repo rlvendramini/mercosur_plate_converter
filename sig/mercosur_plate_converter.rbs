@@ -1,4 +1,56 @@
 module MercosurPlateConverter
   VERSION: String
-  # See the writing guide of rbs: https://github.com/ruby/rbs#guides
+
+  # Main module method to create a converter instance from a plate string
+  def self.from_string: (String? plate) -> Converter
+
+  # Custom error classes
+  class MissingPlateError < StandardError
+  end
+
+  class InvalidPlateError < StandardError
+  end
+
+  # Main converter class
+  class Converter
+    # Constants
+    FIFTH_TERM_MAP: Array[String]
+
+    # Attributes
+    attr_reader original_plate: String
+    attr_reader type: (:mercosur | :old_brazilian | nil)
+    attr_reader plate: String
+
+    # Initialize with a plate string
+    def initialize: (String? plate) -> void
+
+    # Convert the plate based on detected type
+    def convert: () -> String
+
+    # Check if the plate is valid
+    def valid?: () -> bool
+
+    # Check if the plate is in Mercosur format
+    def mercosur?: () -> bool
+
+    # Check if the plate is in old Brazilian format
+    def old_brazilian?: () -> bool
+
+    private
+
+    # Convert from old Brazilian format to Mercosur
+    def convert_from_old_brazilian: () -> String
+
+    # Convert from Mercosur format to old Brazilian
+    def convert_from_mercosur: () -> String
+
+    # Detect the type of the plate
+    def detect_type: () -> void
+
+    # Sanitize the input plate string
+    def sanitize_plate: (String? plate) -> String?
+
+    # Validate the plate and raise errors if invalid
+    def validate_plate: () -> void
+  end
 end

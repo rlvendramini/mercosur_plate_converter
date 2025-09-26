@@ -9,3 +9,6 @@
 
 # rspec failure tracking
 .rspec_status
+
+# RBS collection - contém tipagens baixadas de dependências externas
+.gem_rbs_collection/
