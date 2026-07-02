@@ -4,7 +4,7 @@
 RSpec.describe MercosurPlateConverter::Converter do
   subject { described_class.new(plate) }
 
-  context "when converting from Mercosur plate to Brazilian plate" do
+  context "when converting from Mercosur plate to legacy plate" do
     context "with a valid Mercosur plate" do
       let(:plate) { "ABC1C34" }
 
@@ -28,8 +28,8 @@ RSpec.describe MercosurPlateConverter::Converter do
         expect(subject.mercosur?).to be_truthy
       end
 
-      it "isn't old_brazilian?" do
-        expect(subject.old_brazilian?).to be_falsey
+      it "isn't legacy?" do
+        expect(subject.legacy?).to be_falsey
       end
     end
 
@@ -50,8 +50,8 @@ RSpec.describe MercosurPlateConverter::Converter do
     end
   end
 
-  context "when converting from Brazilian plate to Mercosur plate" do
-    context "with a valid Brazilian plate" do
+  context "when converting from legacy plate to Mercosur plate" do
+    context "with a valid legacy plate" do
       let(:plate) { "ABC1234" }
 
       it "converts correctly" do
@@ -63,23 +63,27 @@ RSpec.describe MercosurPlateConverter::Converter do
       end
 
       it "has the correct type" do
-        expect(subject.type).to eq(:old_brazilian)
+        expect(subject.type).to eq(:legacy)
       end
 
       it "has the correct original plate" do
         expect(subject.original_plate).to eq(plate)
       end
 
-      it "is old_brazilian?" do
-        expect(subject.old_brazilian?).to be_truthy
+      it "is legacy?" do
+        expect(subject.legacy?).to be_truthy
       end
 
       it "isn't mercosur?" do
         expect(subject.mercosur?).to be_falsey
       end
+
+      it "supports deprecated old_brazilian?" do
+        expect(subject.old_brazilian?).to be_truthy
+      end
     end
 
-    context "with an invalid Brazilian plate" do
+    context "with an invalid legacy plate" do
       let(:plate) { "ABC123" }
 
       it "raises an error" do
@@ -87,7 +91,7 @@ RSpec.describe MercosurPlateConverter::Converter do
       end
     end
 
-    context "with missing Brazilian plate" do
+    context "with missing legacy plate" do
       let(:plate) { nil }
 
       it "raises an error" do

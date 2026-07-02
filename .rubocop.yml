@@ -1,5 +1,27 @@
 AllCops:
-  TargetRubyVersion: 2.6
+  TargetRubyVersion: 3.1
+  NewCops: enable
+  SuggestExtensions: false
+
+require:
+  - rubocop-rake
+
+plugins:
+  - rubocop-rspec
+  - rubocop-performance
+
+Gemspec/DevelopmentDependencies:
+  Enabled: false
+
+# Disable alguns cops de RSpec para manter compatibilidade
+RSpec/NamedSubject:
+  Enabled: false
+
+RSpec/PredicateMatcher:
+  Enabled: false
+
+RSpec/ContextWording:
+  Enabled: false
 
 Style/StringLiterals:
   Enabled: true

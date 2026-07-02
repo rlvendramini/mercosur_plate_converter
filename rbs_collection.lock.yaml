@@ -1,0 +1,88 @@
+---
+path: ".gem_rbs_collection"
+gems:
+- name: ast
+  version: '2.4'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: e2034fcc1cfb92bdb3099354c4ade15722d63138
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
+- name: diff-lcs
+  version: '1.5'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: e2034fcc1cfb92bdb3099354c4ade15722d63138
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
+- name: fileutils
+  version: '0'
+  source:
+    type: stdlib
+- name: parallel
+  version: '1.20'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: e2034fcc1cfb92bdb3099354c4ade15722d63138
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
+- name: parser
+  version: '3.2'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: e2034fcc1cfb92bdb3099354c4ade15722d63138
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
+- name: rainbow
+  version: '3.0'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: e2034fcc1cfb92bdb3099354c4ade15722d63138
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
+- name: rake
+  version: '13.0'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: e2034fcc1cfb92bdb3099354c4ade15722d63138
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
+- name: regexp_parser
+  version: '2.8'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: e2034fcc1cfb92bdb3099354c4ade15722d63138
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
+- name: rubocop
+  version: '1.57'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: e2034fcc1cfb92bdb3099354c4ade15722d63138
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
+- name: rubocop-ast
+  version: '1.30'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: e2034fcc1cfb92bdb3099354c4ade15722d63138
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
+- name: simplecov
+  version: '0.22'
+  source:
+    type: git
+    name: ruby/gem_rbs_collection
+    revision: e2034fcc1cfb92bdb3099354c4ade15722d63138
+    remote: https://github.com/ruby/gem_rbs_collection.git
+    repo_dir: gems
+gemfile_lock_path: Gemfile.lock

@@ -1,8 +1,8 @@
+# MercosurPlateConverter
+
 [![Gem Version](https://badge.fury.io/rb/mercosur_plate_converter.svg)](https://badge.fury.io/rb/mercosur_plate_converter)
 [![Ruby](https://github.com/rlvendramini/mercosur_plate_converter/actions/workflows/ruby.yml/badge.svg)](https://github.com/rlvendramini/mercosur_plate_converter/actions/workflows/ruby.yml)
 [![CodeQL](https://github.com/rlvendramini/mercosur_plate_converter/actions/workflows/codeql.yml/badge.svg)](https://github.com/rlvendramini/mercosur_plate_converter/actions/workflows/codeql.yml)
-
-# MercosurPlateConverter
 
 [PORTUGUESE 🇧🇷](README.md)
 
@@ -17,18 +17,18 @@ This conversion is done from a sequence, as in an `Array`, where each element is
 
 So, for example:
 
-|Number|Letter|
-|-----|------|
-|0|A|
-|1|B|
-|2|C|
-|3|D|
-|4|E|
-|5|F|
-|6|G|
-|7|H|
-|8|I|
-|9|J|
+| Number | Letter |
+| ------ | ------ |
+| 0      | A      |
+| 1      | B      |
+| 2      | C      |
+| 3      | D      |
+| 4      | E      |
+| 5      | F      |
+| 6      | G      |
+| 7      | H      |
+| 8      | I      |
+| 9      | J      |
 
 ## Installation
 
@@ -40,11 +40,15 @@ gem 'mercosur_plate_converter'
 
 And then execute:
 
-    $ bundle install
+```sh
+bundle install
+```
 
 Or install it yourself as:
 
-    $ gem install mercosur_plate_converter
+```sh
+gem install mercosur_plate_converter
+```
 
 ## Usage
 
@@ -60,8 +64,10 @@ plate.plate #=> "ABC1234"
 plate.type #=> :mercosur
 plate.valid? #=> true
 plate.mercosur? #=> true
-plate.old_brazilian? #=> false
+plate.legacy? #=> false
 ```
+
+> **Deprecated:** `old_brazilian?` still works but will be removed in future versions. Use `legacy?`.
 
 ## Development
 
@@ -71,4 +77,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/mercosur_plate_converter.
+Bug reports and pull requests are welcome on GitHub at <https://github.com/rlvendramini/mercosur_plate_converter>.
