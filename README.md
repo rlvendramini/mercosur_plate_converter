@@ -64,8 +64,10 @@ plate.plate #=> "ABC1234"
 plate.type #=> :mercosur
 plate.valid? #=> true
 plate.mercosur? #=> true
-plate.old_brazilian? #=> false
+plate.legacy? #=> false
 ```
+
+> **Deprecated:** `old_brazilian?` ainda funciona, mas será removido em versões futuras. Use `legacy?`.
 
 ## Desenvolvimento
 

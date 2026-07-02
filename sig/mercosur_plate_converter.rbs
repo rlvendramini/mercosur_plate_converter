@@ -16,18 +16,15 @@ module MercosurPlateConverter
     # Constants
     FIFTH_TERM_MAP: Array[String]
     MERCOSUR_REGEX: Regexp
-    OLD_BRAZILIAN_REGEX: Regexp
+    LEGACY_REGEX: Regexp
 
     # Attributes
     attr_reader original_plate: String
-    attr_reader type: (:mercosur | :old_brazilian | nil)
+    attr_reader type: (:mercosur | :legacy | nil)
     attr_reader plate: String
 
     # Initialize with a plate string
     def initialize: (String? plate) -> void
-
-    # Convert the plate based on detected type
-    def convert: () -> String
 
     # Check if the plate is valid
     def valid?: () -> bool
@@ -35,15 +32,21 @@ module MercosurPlateConverter
     # Check if the plate is in Mercosur format
     def mercosur?: () -> bool
 
-    # Check if the plate is in old Brazilian format
+    # Check if the plate is in legacy format
+    def legacy?: () -> bool
+
+    # DEPRECATED: Use legacy? instead
     def old_brazilian?: () -> bool
 
     private
 
-    # Convert from old Brazilian format to Mercosur
-    def convert_from_old_brazilian: () -> String
+    # Convert the plate based on detected type
+    def convert: () -> String
 
-    # Convert from Mercosur format to old Brazilian
+    # Convert from legacy format to Mercosur
+    def convert_from_legacy: () -> String
+
+    # Convert from Mercosur format to legacy
     def convert_from_mercosur: () -> String
 
     # Detect the type of the plate
@@ -52,7 +55,10 @@ module MercosurPlateConverter
     # Sanitize the input plate string
     def sanitize_plate: (String? plate) -> String?
 
-    # Validate the plate and raise errors if invalid
-    def validate_plate: () -> void
+    # Validate presence of the plate
+    def validate_plate_presence: () -> void
+
+    # Validate the plate format
+    def validate_plate_format: () -> void
   end
 end

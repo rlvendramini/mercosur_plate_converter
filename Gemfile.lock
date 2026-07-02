@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mercosur_plate_converter (0.1.0)
+    mercosur_plate_converter (1.0.0)
 
 GEM
   remote: https://rubygems.org/
