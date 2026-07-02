@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary = "An easy converter of Mercosur plates to Brazilian plates."
   spec.description = "I created this gem to convert Mercosur plates to Brazilian plates and vice versa."
   spec.homepage = "https://github.com/rlvendramini/mercosur_plate_converter"
-  spec.required_ruby_version = ">= 3.4.7"
+  spec.required_ruby_version = ">= 3.0.0"
   spec.license = "MIT"
 
   spec.metadata["homepage_uri"] = spec.homepage
